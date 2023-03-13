@@ -35,28 +35,31 @@ btnVe.addEventListener('click', loginUser);
 
 
 
+
 function loginUser(e) {
     e.preventDefault();
     let registered = '';
     const inputUser = document.getElementById('inputemail').value;
-    for(let i = 0; i < listUser.lenght; i++ ){
+    for(let i = 0; i < listUser.length; i++ ){
         if(listUser[i].toLowerCase() === inputUser.toLowerCase() ){
-            registered = listUser[i];
-           console.dir('registrato');
+           registered = listUser[i];
+           
             
-        } else{
-            console.log('non registrato');
-        }
+        } 
+    } 
+    
+    if (registered !== '' ){
+        console.log('benvenuto');
+        
+    } else {
+        console.log('NON REGISTRATO');
     }
     
 
-
-
-    
-
-
-
 }
+
+
+
 
 
 
