@@ -9,18 +9,26 @@
     <title>Roll that Dice - Play</title>
 </head>
 <body>
-    <div class="container">'
-        immagine logo
-        <img src="" alt="">
-        <h2>Sei un nostro utente?</h2>
-    </div>
-
-    <div class="container w-100 debug">
-
-        <button id="diceroll" type="submit" class="btn btn-primary text-uppercase">roll</button>
-          
-    </div>
-
+    <div class="container w-100 d-flex flex-column align-items-center mt-3">
+        <h1 class="text-uppercase display-5 fw-bold">roll that dice</h1>
+        <img src="./img/pngkey.com-dice-png-5440.png" alt="dadi">
+        <div id="results" class="container text-uppercase d-flex flex-column align-content-center w-25 opacity-0 mt-4">
+            <div class="d-flex justify-content-between">
+                <div id="player">
+                    
+                </div>
+                <div id="pc">
+                    
+                </div>
+            </div>
+            <div id="verdict" class="d-flex justify-content-center my-3">
+                <h1 class="text-uppercase">you win!!</h1>
+            </div>
+        </div>
+ </div>
+ <div class="container w-25 d-flex justify-content-center">
+    <button id="diceroll" type="submit" class="btn btn-primary p-4 rounded-5 fw-bold text-uppercase">roll that dice!!</button>
+</div>
     
     <script type="text/javascript" src="./js/utility.js"></script>
     <script type="text/javascript" src="./js/2ndpage.js"></script>
